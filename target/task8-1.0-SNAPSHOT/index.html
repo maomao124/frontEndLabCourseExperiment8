@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：task8
+  File name(文件名): index
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/26
+  Time(创建时间)： 19:08
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<!-- 顶部通栏 -->
+<div class="animated bounceInDown">
+    <header class="heima_topBar d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="javascript:;" class="heima_app">
+                        <span class="heima_icon heima_icon_phone"></span>
+                        <span>手机黑马财富</span>
+                        <img src="images/code.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <span class="heima_icon heima_icon_tel"></span>
+                    <span>400-618-4000（服务时间 9:00-21:00）</span>
+                </div>
+                <div class="col-md-2">
+                    <a href="javascript:;">常见问题</a>
+                    <a href="javascript:;" class="ml-2">财富登录</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="javascript:;" class="btn btn-danger btn-sm heima_btn_register mr-2">免费注册</a>
+                    <a href="javascript:;">登录</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<!-- 导航栏 -->
+<div class="animated bounceInUp">
+    <nav class="navbar navbar-light navbar-expand-md bg-light heima_nav">
+        <div class="container-lg">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="LOGO">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="javascript:;">我要投资</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:;">我要借贷</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:;">平台介绍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:;">新手专区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:;">最新动态</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:;">微平台</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">个人中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- 轮播图 -->
+<div class="animated bounceInDown">
+    <div class="heima_banner">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+            </ol>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source srcset="./images/slide_01_640x340.jpg" media="(max-width:768px)">
+                        <img src="images/slide_01_2000x410.jpg">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source srcset="./images/slide_02_640x340.jpg" media="(max-width:768px)">
+                        <img src="./images/slide_02_2000x410.jpg">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source srcset="./images/slide_03_640x340.jpg" media="(max-width:768px)">
+                        <img src="./images/slide_03_2000x410.jpg">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source srcset="./images/slide_04_640x340.jpg" media="(max-width:768px)">
+                        <img src="./images/slide_04_2000x410.jpg">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 产品信息 -->
+<div class="animated fadeInLeft">
+    <div class="heima_info d-none d-sm-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <a href="javascript:;">
+                        <div class="media">
+                            <span class="heima_icon heima_icon_E903 mr-3"></span>
+                            <div class="media-body">
+                                <h4 class="mt-0">支付交易保障</h4>
+                                <p>银联支付全称保证支付安全</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <a href="javascript:;">
+                        <div class="media">
+                            <span class="heima_icon heima_icon_E901 mr-3"></span>
+                            <div class="media-body">
+                                <h4 class="mt-0">平台财产安全</h4>
+                                <p>由PICC保驾护航</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <a href="javascript:;">
+                        <div class="media">
+                            <span class="heima_icon heima_icon_E900 mr-3"></span>
+                            <div class="media-body">
+                                <h4 class="mt-0">交易安全</h4>
+                                <p>由保险公司对借款人承保</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <a href="javascript:;">
+                        <div class="media">
+                            <span class="heima_icon heima_icon_E904 mr-3"></span>
+                            <div class="media-body">
+                                <h4 class="mt-0">安全保障</h4>
+                                <p>独创八层安全保障机制</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <a href="javascript:;">
+                        <div class="media">
+                            <span class="heima_icon heima_icon_E902 mr-3"></span>
+                            <div class="media-body">
+                                <h4 class="mt-0">筛选优质资产</h4>
+                                <p>对接知名企业征信系统</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <a href="javascript:;">
+                        <div class="media">
+                            <span class="heima_icon heima_icon_E907 mr-3"></span>
+                            <div class="media-body">
+                                <h4 class="mt-0">联合信息发布</h4>
+                                <p>与名企共同发布利率指数报告</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 预约交易 -->
+<div class="animated fadeInRight">
+    <div class="heima_book">
+        <div class="container">
+            <div class="float-left">
+                <span class="heima_icon heima_icon_E906"></span>
+                现在有 273 人在排队，累计预约交易成功 7571 次。 什么是预约投标？
+                <a class="book_link" href="javascript:;">立即预约</a>
+            </div>
+            <div class="float-right d-none d-lg-block">
+                <a href="javascript:;">
+                    <span class="heima_icon heima_icon_E905"></span>
+                    黑马财富企业宣传片
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 产品 -->
+<div class="animated bounceInDown">
+    <div class="heima_product">
+        <div class="container">
+            <!-- 导航标签 -->
+            <ul class="nav product-tabs" role="tablist">
+                <!-- 导航标签中的内容 -->
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link active" href="#product_tab_01" data-toggle="tab">特别推荐</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link" href="#product_tab_02" data-toggle="tab">黑马投资</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link" href="#product_tab_03" data-toggle="tab">黑马小宝</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link" href="#product_tab_04" data-toggle="tab">月月盈</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link" href="#product_tab_05" data-toggle="tab">稳赢宝</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link" href="#product_tab_06" data-toggle="tab">黑马通宝</a>
+
+            </ul>
+            <!-- 标签页 -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade show active" id="product_tab_01">
+                    <!-- 第一个标签页中的内容 -->
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product_box active heima_icon heima_icon_E915">
+                                <div class="product_box_right">
+                                    <p><b>8</b><sub>%</sub></p>
+                                    <p>年利率</p>
+                                </div>
+                                <div class="product_box_left">
+                                    <h3 class="text-center">新手体验标1002期</h3>
+                                    <div class="row">
+                                        <div class="col-6 text-left">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                        </div>
+                                        <div class="col-6 pl-0 text-right">
+                                            <p>已投标人数</p>
+                                            <p>22</p>
+                                        </div>
+                                        <div class="col-6 text-left">
+                                            <p>借款期限</p>
+                                            <p>10天</p>
+                                        </div>
+                                        <div class="col-6 pl-0 text-right">
+                                            <p>已投标总金额</p>
+                                            <p>2000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product_box">
+                                <div class="product_box_right">
+                                    <div class="product_tips">
+                                        <span class="bao" title="微金宝">宝</span>
+                                        <span class="bei" title="北京市">北</span>
+                                    </div>
+                                    <p><b>8</b><sub>%</sub></p>
+                                    <p>年利率</p>
+                                </div>
+                                <div class="product_box_left">
+                                    <h3 class="text-center">新手体验标1002期</h3>
+                                    <div class="row">
+                                        <div class="col-6 text-left">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                        </div>
+                                        <div class="col-6 pl-0 text-right">
+                                            <p>已投标人数</p>
+                                            <p>22</p>
+                                        </div>
+                                        <div class="col-6 text-left">
+                                            <p>借款期限</p>
+                                            <p>10天</p>
+                                        </div>
+                                        <div class="col-6 pl-0 text-right">
+                                            <p>已投标总金额</p>
+                                            <p>2000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product_box">
+                                <div class="product_box_right">
+                                    <p><b>8</b><sub>%</sub></p>
+                                    <p>年利率</p>
+                                </div>
+                                <div class="product_box_left">
+                                    <h3 class="text-center">新手体验标1002期</h3>
+                                    <div class="row">
+                                        <div class="col-6 text-left">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                        </div>
+                                        <div class="col-6 pl-0 text-right">
+                                            <p>已投标人数</p>
+                                            <p>22</p>
+                                        </div>
+                                        <div class="col-6 text-left">
+                                            <p>借款期限</p>
+                                            <p>10天</p>
+                                        </div>
+                                        <div class="col-6 pl-0 text-right">
+                                            <p>已投标总金额</p>
+                                            <p>2000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product_box">
+                                <div class="product_box_right">
+                                    <p><b>8</b><sub>%</sub></p>
+                                    <p>年利率</p>
+                                </div>
+                                <div class="product_box_left">
+                                    <h3 class="text-center">新手体验标1002期</h3>
+                                    <div class="row">
+                                        <div class="col-6 text-left">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                        </div>
+                                        <div class="col-6 pl-0 text-right">
+                                            <p>已投标人数</p>
+                                            <p>22</p>
+                                        </div>
+                                        <div class="col-6 text-left">
+                                            <p>借款期限</p>
+                                            <p>10天</p>
+                                        </div>
+                                        <div class="col-6 pl-0 text-right">
+                                            <p>已投标总金额</p>
+                                            <p>2000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="product_tab_02">2</div>
+                <div role="tabpanel" class="tab-pane fade" id="product_tab_03">3</div>
+                <div role="tabpanel" class="tab-pane fade" id="product_tab_04">4</div>
+                <div role="tabpanel" class="tab-pane fade" id="product_tab_05">5</div>
+                <div role="tabpanel" class="tab-pane fade" id="product_tab_06">6</div>
+                <div role="tabpanel" class="tab-pane fade" id="product_tab_07">7</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 新闻 -->
+<div class="animated slideInDown">
+    <div class="heima_news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h3 class="heima_newsTitle">全部新闻</h3>
+                </div>
+                <div class="col-lg-1">
+                    <div class="heima_newsLine d-none d-lg-block"></div>
+                    <ul class="nav nav-tabs heima_newsIcons" role="tablist">
+                        <li role="presentation">
+                            <a href="#news_tab_01" class="active" role="tab" data-toggle="tab">
+                                <span class="heima_icon heima_icon_new01"></span>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#news_tab_02" role="tab" data-toggle="tab">
+                                <span class="heima_icon heima_icon_new02"></span>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#news_tab_03" role="tab" data-toggle="tab">
+                                <span class="heima_icon heima_icon_new03"></span>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#news_tab_04" role="tab" data-toggle="tab">
+                                <span class="heima_icon heima_icon_new04"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="news_tab_01">
+                            <ul class="heima_newslist">
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="d-none d-sm-inline">2022-01-22</span>【公告】关于22期项目募集期延长通知
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="d-none d-sm-inline">2022-01-22</span>【动态】首善财富董事长一行莅临黑马财富调研指导
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="d-none d-sm-inline">2022-01-22</span>【动态】封面人物第六期 ▏万雅泉—— 手写心情的双鱼座美女
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="d-none d-sm-inline">2022-01-22</span>【公告】黑马财富平台系统升级维护公告
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="d-none d-sm-inline">2022-01-22</span>【动态】黑马财富正式推出安全优质的理财产品
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="d-none d-sm-inline">2022-01-22</span>【动态】黑马财富七月电脑节，激情狂欢理财好礼送不停！
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="d-none d-sm-inline">2022-01-22</span>【还款】一周还款公告2022年7月11日-7月17日
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="news_tab_02">2</div>
+                        <div role="tabpanel" class="tab-pane" id="news_tab_03">3</div>
+                        <div role="tabpanel" class="tab-pane" id="news_tab_04">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 合作伙伴 -->
+    <footer class="heima_partner">
+        <div class="container">
+            <h3>合作伙伴</h3>
+            <ul>
+                <li>
+                    <a href="javascript:;" class="heima_icon heima_icon_partner01"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="heima_icon heima_icon_partner02"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="heima_icon heima_icon_partner03"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="heima_icon heima_icon_partner04"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="heima_icon heima_icon_partner05"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="heima_icon heima_icon_partner06"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="heima_icon heima_icon_partner07"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="heima_icon heima_icon_partner08"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="heima_icon heima_icon_partner09"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="libs/jquery-3.6.0/jquery.min.js"></script>
+<script src="libs/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
